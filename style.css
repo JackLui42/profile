@@ -32,13 +32,14 @@ nav {
     height: 10em;
     margin: auto;
     margin-top: 9em;
-    margin-bottom: 12em;
+    margin-bottom: 15em;
     text-align: center;
     border-radius: 100%;
+    align-items: center;
 }
 
 nav img {
-    margin-left: auto;
+    margin-left: -10px;
     margin-right: auto;
     width: 100%;
 }
@@ -256,12 +257,13 @@ section {
 /* Home Section */
 
 .title {
-    font-size: 30px;
+    font-size: 50px;
     display: block;
 }
 
 .soft-title {
     font-size: 20px;
+    margin-bottom: 10em;
 }
 
 #Home {
@@ -293,6 +295,45 @@ section {
 }
 
 /* About Me Section */
+.about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 444px);
+    grid-auto-rows: 444px;
+    justify-content: center;
+    grid-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: row;
+    margin-top: 2%;
+}
+
+.about-me-grid img {
+    margin: auto;
+}
+
+.about-me-grid h4 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.about-me-grid p {
+    color: crimson;
+    font-size: 24px;
+}
+
+.about-me-grid .flip-coin {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#AboutMe h2 {
+    padding-bottom: 2%;
+    font-size: 33px;
+}
+
+#AboutMe h2:hover {
+    color: crimson;
+}
 
 /* Flip Coin*/
 .flip-coin {
