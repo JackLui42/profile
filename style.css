@@ -253,6 +253,8 @@ section {
     color: white;
 }
 
+/* Home Section */
+
 .title {
     font-size: 30px;
     display: block;
@@ -260,6 +262,10 @@ section {
 
 .soft-title {
     font-size: 20px;
+}
+
+#Home {
+    padding-bottom: 10em;
 }
 
 .soft-title p {
@@ -284,4 +290,54 @@ section {
     100% {
         background-position: 500%;
     }
+}
+
+/* About Me Section */
+
+/* Flip Coin*/
+.flip-coin {
+    background-color: transparent;
+    width: 444px;
+    height:444px;
+    perspective: 1000px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.flip-coin-whole {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-coin:hover .flip-coin-whole {
+    transform: rotateY(180deg);
+}
+
+.coin-front, .coin-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+
+.coin-front {
+    background-color: white;
+    color: blue;
+}
+
+.coin-front img {
+    border-radius: 50%;
+}
+
+.coin-back {
+    background-color: blue;
+    color: black;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+    box-shadow: inset 0px 0px 0px 40px white;
 }
