@@ -263,7 +263,13 @@ section {
 
 .soft-title {
     font-size: 30px;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
+}
+
+.title h5 {
+    color: crimson;
+    font-size: 20px;
+    padding-bottom: 2%;
 }
 
 #Home {
