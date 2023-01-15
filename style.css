@@ -381,6 +381,7 @@ section {
 
 .coin-front img {
     border-radius: 50%;
+    box-shadow: -1px -1px crimson;
 }
 
 .coin-back {
@@ -422,7 +423,7 @@ section {
 .card-front, .card-back {
     height: 100%;
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     position: absolute;
     backface-visibility: hidden;
 }
@@ -432,6 +433,29 @@ section {
 }
 
 .card-back {
-    background-color: blue;
+    background-color: black;
     transform: rotateY(180deg);
+    position: absolute;
+    color: #B90E0A;
+ }
+
+.card-1 .card-back {
+    background-image: url("images/card-back-1.png");
+}
+
+.card-2 .card-back {
+    background-image: url("images/card-back-2.png");
+}
+
+.card-3 .card-back {
+    background-image: url("images/card-back-3.png");
+}
+
+#Skills h2 {
+    padding-bottom: 2%;
+    font-size: 33px; 
+}
+
+#Skills h2:hover {
+    color: crimson;
 }
