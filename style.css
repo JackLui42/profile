@@ -335,6 +335,14 @@ section {
     color: crimson;
 }
 
+.about-me-1 {
+    width: auto;
+}
+
+#AboutMe {
+    margin-bottom: 15rem;
+}
+
 /* Flip Coin*/
 .flip-coin {
     background-color: transparent;
@@ -381,4 +389,49 @@ section {
     box-sizing: border-box;
     transform: rotateY(180deg);
     box-shadow: inset 0px 0px 0px 40px white;
+}
+
+/* Skills Section */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: 250px;
+    height: 402px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    perspective: 800px;
+}
+
+.card-front, .card-back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-image: url("images/card-front.png");
+}
+
+.card-back {
+    background-color: blue;
+    transform: rotateY(180deg);
 }
