@@ -12,6 +12,7 @@ body {
     background-color: black;
 }
 
+/* circular navigation bar */
 .navbar:after {
     content: "";
     display: table;
@@ -24,12 +25,6 @@ a {
     z-index: 100;
 }
 
-section {
-    padding: 1%;
-    text-align: center;
-    color: white;
-}
-
 nav {
     position: relative;
     display: block;
@@ -37,7 +32,7 @@ nav {
     height: 10em;
     margin: auto;
     margin-top: 9em;
-    margin-bottom: 9em;
+    margin-bottom: 12em;
     text-align: center;
     border-radius: 100%;
 }
@@ -252,4 +247,41 @@ a.link:hover, a.link:hover span {
     }
 }
 
+section {
+    padding: 1%;
+    text-align: center;
+    color: white;
+}
 
+.title {
+    font-size: 30px;
+    display: block;
+}
+
+.soft-title {
+    font-size: 20px;
+}
+
+.soft-title p {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #B90E0A, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(255,255,255,0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
