@@ -273,7 +273,7 @@ section {
 }
 
 #Home {
-    padding-bottom: 10em;
+    padding-bottom: 9em;
 }
 
 .soft-title p {
@@ -311,6 +311,7 @@ section {
     margin-right: auto;
     grid-auto-flow: row;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .about-me-grid img {
@@ -346,7 +347,7 @@ section {
 }
 
 #AboutMe {
-    margin-bottom: 15rem;
+    margin-bottom: 16rem;
 }
 
 /* Flip Coin*/
@@ -464,4 +465,27 @@ section {
 
 #Skills h2:hover {
     color: crimson;
+}
+
+#Skills {
+    margin-bottom: 25rem;
+}
+
+#Music h2 {
+    padding-bottom: 2%;
+    font-size: 33px;
+}
+
+#Music h2:hover {
+    color: crimson;
+}
+
+#Music .flex-container {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4rem;
+}
+
+#Music .soft-title {
+    margin-bottom: 2rem;
 }
