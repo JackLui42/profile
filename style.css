@@ -489,3 +489,40 @@ section {
 #Music .soft-title {
     margin-bottom: 2rem;
 }
+
+footer {
+    height: auto;
+    width: 100%;
+}
+
+footer h2 {
+    color: crimson;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content .socials {
+    color: crimson;
+    font-size: 2rem;
+    word-spacing: 2rem;
+}
+
+.footer-content .bottom-text {
+    color: crimson;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom-text p {
+    font-size: 14px;
+    word-spacing: 2px;
+}
