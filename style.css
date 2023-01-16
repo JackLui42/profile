@@ -500,10 +500,14 @@ footer {
 }
 
 footer h2 {
-    color: crimson;
+    color: white;
     text-align: center;
     padding-bottom: 2rem;
     margin-top: 1rem;
+}
+
+footer h2:hover {
+    color: #B90E0A;
 }
 
 .footer-content {
